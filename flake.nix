@@ -37,6 +37,10 @@
                     enableTreesitter = true;
                     enableFormat = true;
                   };
+                  binds = {
+                    whichKey.enable = true;
+                    cheatsheet.enable = true;
+                  };
                   autocomplete.nvim-cmp.enable = true;
                   telescope.enable = true;
                 };
