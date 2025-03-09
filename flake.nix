@@ -23,9 +23,20 @@
                   theme.enable = true;
                   theme.name = "tokyonight";
                   theme.style = "night";
-                  languages.nix.enable = true;
-                  languages.enableLSP = true;
-                  languages.enableTreesitter = true;
+                  options = {
+                    autoindent = true;
+                    shiftwidth = 2;
+                    tabstop = 2;
+                  };
+                  lsp = {
+                    formatOnSave = true;
+                  };
+                  languages = {
+                    nix.enable = true;
+                    enableLSP = true;
+                    enableTreesitter = true;
+                    enableFormat = true;
+                  };
                   autocomplete.nvim-cmp.enable = true;
                   telescope.enable = true;
                 };
